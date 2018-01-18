@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground">
+
+    <TextView
+        android:id="@+id/mainTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="18dp"
+        android:text="Migrant Help"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textColor="@color/main_title"
+        android:lineSpacingExtra="-6sp"
+        tools:text="Migrant help"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="14dp"
+        android:text="in South Korea"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textColor="@color/main_title"
+        android:lineSpacingExtra="-6sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle1" />
+
+    <ImageView
+        android:id="@+id/line4"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="62dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/line_unselected" />
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/line4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/line_unselected" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/line3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/line_unselected" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/line2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/line_unselected" />
+
+    <Button
+        android:id="@+id/goMap"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/findLaborCenter"
+        android:textColor="@color/go_menu"
+        android:textSize="23sp"
+        android:lineSpacingExtra="-5sp"
+        app:layout_constraintBottom_toTopOf="@+id/line2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/goLaw"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/searchKoreanLaborLaw"
+        android:textColor="@color/go_menu"
+        android:textSize="23sp"
+        android:lineSpacingExtra="-5sp"
+        app:layout_constraintBottom_toTopOf="@+id/line3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <Button
+        android:id="@+id/goFaq"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/faq"
+        android:textColor="@color/go_menu"
+        android:textSize="23sp"
+        android:lineSpacingExtra="-5sp"
+        app:layout_constraintBottom_toTopOf="@+id/line4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+    <Button
+        android:id="@+id/goEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/emailConsulting"
+        android:textColor="@color/go_menu"
+        android:textSize="23sp"
+        android:lineSpacingExtra="-5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line4" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/languageRecycler"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/mainBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle2" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_settings" />
+
+</android.support.constraint.ConstraintLayout>
